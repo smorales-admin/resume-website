@@ -32,12 +32,12 @@ body {
 }
 h1 {
     font-family: 'Open Sans', sans-serif;
-    font-weight: 800;
+    font-weight: 800; /* Already extra bold */
     margin: 0;
     font-size: 5.5rem;
     line-height: 1.1;
     letter-spacing: -0.02em;
-    color: #222222;
+    color: #7a2e3a; /* Updated your name to Burgundy */
 }
 h2 {
     font-family: 'Open Sans', sans-serif;
@@ -46,18 +46,18 @@ h2 {
     font-size: 3.2rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: #7a2e3a; /* Updated to Slate Burgundy */
+    color: #7a2e3a; /* Slate Burgundy */
 }
 h3 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     margin: 0;
     font-size: 2.2rem;
-    color: #7a2e3a; /* Updated to Slate Burgundy */
+    color: #7a2e3a; /* Slate Burgundy */
 }
 /* links */
 a {
-    color: #7a2e3a; /* Updated to Slate Burgundy */
+    color: #7a2e3a; /* Slate Burgundy */
 }
 a:hover {
     color: #bcaa96;
@@ -67,10 +67,10 @@ footer a {
     color: #bcaa96;
 }
 footer a:hover {
-    color: #7a2e3a; /* Updated to Slate Burgundy */
+    color: #7a2e3a; /* Slate Burgundy */
 }
 .btn {
-    background: #7a2e3a; /* Updated to Slate Burgundy */
+    background: #7a2e3a; /* Slate Burgundy */
     color: #f6f6f6;
     text-decoration: none;
     text-transform: uppercase;
@@ -103,7 +103,6 @@ footer a:hover {
     background: rgb(255 255 255 / 0.9);
     padding: 30px;
 }
-/* Applied Burgundy directly to the job summary title on index.html */
 .home header h2 {
     color: #7a2e3a;
     font-size: 2.6rem;
@@ -206,6 +205,10 @@ footer a:hover {
 }
 .work-details p {
     margin: 0;
+}
+/* Creates professional vertical spacing between job title row and bullet list */
+.work-details {
+    margin-bottom: 15px !important;
 }
 @media screen and (min-width: 860px) {
     .work-item {
