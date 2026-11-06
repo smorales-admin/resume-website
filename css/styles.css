@@ -32,12 +32,12 @@ body {
 }
 h1 {
     font-family: 'Open Sans', sans-serif;
-    font-weight: 800; /* Already extra bold */
+    font-weight: 800;
     margin: 0;
     font-size: 5.5rem;
     line-height: 1.1;
     letter-spacing: -0.02em;
-    color: #7a2e3a; /* Updated your name to Burgundy */
+    color: #7a2e3a;
 }
 h2 {
     font-family: 'Open Sans', sans-serif;
@@ -46,18 +46,27 @@ h2 {
     font-size: 3.2rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: #7a2e3a; /* Slate Burgundy */
+    color: #7a2e3a;
 }
 h3 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     margin: 0;
     font-size: 2.2rem;
-    color: #7a2e3a; /* Slate Burgundy */
+    color: #7a2e3a;
+}
+/* Aligns dates to the left, changes them to burgundy, and adds a breathing gap */
+h3 span {
+    display: block;
+    float: none !important;
+    color: #7a2e3a !important;
+    font-size: 1.6rem;
+    margin-top: 6px;
+    font-weight: normal;
 }
 /* links */
 a {
-    color: #7a2e3a; /* Slate Burgundy */
+    color: #7a2e3a;
 }
 a:hover {
     color: #bcaa96;
@@ -67,10 +76,10 @@ footer a {
     color: #bcaa96;
 }
 footer a:hover {
-    color: #7a2e3a; /* Slate Burgundy */
+    color: #7a2e3a;
 }
 .btn {
-    background: #7a2e3a; /* Slate Burgundy */
+    background: #7a2e3a;
     color: #f6f6f6;
     text-decoration: none;
     text-transform: uppercase;
@@ -206,7 +215,6 @@ footer a:hover {
 .work-details p {
     margin: 0;
 }
-/* Creates professional vertical spacing between job title row and bullet list */
 .work-details {
     margin-bottom: 15px !important;
 }
@@ -270,6 +278,7 @@ footer {
         padding-right: 15px;
     }
 }
+
 
 
 
