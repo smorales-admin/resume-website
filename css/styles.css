@@ -30,20 +30,28 @@ body {
     font-size: 1.5rem;
     line-height: 1.4;
 }
-h1, h2, h3 {
+h1 {
     font-family: 'Caveat', cursive;
     font-weight: 400;
-    margin:0;
-}
-h1 {
+    margin: 0;
     font-size: 7rem;
     line-height: 0.85;
 }
 h2 {
-    font-size: 3.6rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #222222;
 }
 h3 {
-    font-size: 2.4rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    font-size: 2.2rem;
+    color: #3c8453;
 }
 /* links */
 a {
@@ -116,6 +124,8 @@ footer a:hover {
 }
 .resume-section h2 {
     border-bottom: 2px dashed #d3d4d6;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
 }
 .download-link {
     position: fixed;
@@ -136,7 +146,10 @@ footer a:hover {
         font-size: 5rem;
     }
     h2 {
-        font-size: 2.6rem;
+        font-size: 2.4rem;
+    }
+    h3 {
+        font-size: 1.8rem;
     }
 }
 
@@ -248,3 +261,4 @@ footer {
         padding-right: 15px;
     }
 }
+
