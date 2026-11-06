@@ -200,12 +200,10 @@ footer a:hover {
 .work-details p {
     margin: 0;
 }
-
+/* Removed the two-column grid layout here so job titles stay above the bullets */
 @media screen and (min-width: 860px) {
     .work-item {
-        display: grid;
-        grid-template-columns: 300px 1fr;
-        column-gap: 20px;
+        display: block; 
     }
     .work-summary p:first-child {
         margin-top: 0;
@@ -263,5 +261,6 @@ footer {
         padding-right: 15px;
     }
 }
+
 
 
