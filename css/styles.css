@@ -1,11 +1,11 @@
 /*
 COLOR PALETTE
 
-Dark green    #3c8453
-Sandy beige   #bcaa96
-Dark gray     #222222
-Light gray    #d3d4d6
-Off-white     #f6f6f6
+Primary Accent: Slate Burgundy     #7a2e3a
+Secondary Accent: Sandy beige       #bcaa96
+Dark gray                          #222222
+Light gray                         #d3d4d6
+Off-white                          #f6f6f6
 */
 
 /* GLOBAL STYLES 
@@ -46,18 +46,18 @@ h2 {
     font-size: 3.2rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: #222222;
+    color: #7a2e3a; /* Updated to Slate Burgundy */
 }
 h3 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     margin: 0;
     font-size: 2.2rem;
-    color: #3c8453;
+    color: #7a2e3a; /* Updated to Slate Burgundy */
 }
 /* links */
 a {
-    color: #3c8453;
+    color: #7a2e3a; /* Updated to Slate Burgundy */
 }
 a:hover {
     color: #bcaa96;
@@ -67,10 +67,10 @@ footer a {
     color: #bcaa96;
 }
 footer a:hover {
-    color: #3c8453;
+    color: #7a2e3a; /* Updated to Slate Burgundy */
 }
 .btn {
-    background: #3c8453;
+    background: #7a2e3a; /* Updated to Slate Burgundy */
     color: #f6f6f6;
     text-decoration: none;
     text-transform: uppercase;
@@ -102,6 +102,13 @@ footer a:hover {
 .content-bg {
     background: rgb(255 255 255 / 0.9);
     padding: 30px;
+}
+/* Applied Burgundy directly to the job summary title on index.html */
+.home header h2 {
+    color: #7a2e3a;
+    font-size: 2.6rem;
+    letter-spacing: 0.02em;
+    margin-top: 5px;
 }
 @media screen and (max-width: 650px) {
     .home .content-wrapper {
@@ -200,7 +207,6 @@ footer a:hover {
 .work-details p {
     margin: 0;
 }
-/* Removed the two-column grid layout here so job titles stay above the bullets */
 @media screen and (min-width: 860px) {
     .work-item {
         display: block; 
@@ -261,6 +267,7 @@ footer {
         padding-right: 15px;
     }
 }
+
 
 
 
