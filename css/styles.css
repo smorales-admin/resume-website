@@ -82,7 +82,7 @@ main p {
   margin-bottom: 10px;
 }
 
-/* Work Experience Layouts & Smooth Moving Effect (Preserved) */
+/* Work Experience Layouts & Smooth Moving Effect */
 .work-item {
   transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s ease;
 }
@@ -102,12 +102,11 @@ main p {
   text-align: left !important;
 }
 
-/* Ensures strong/bold headings inside job details stay burgundy */
 .work-details h3 strong {
   color: #800020 !important;
 }
 
-/* UPDATED: Forces job dates directly below titles to look crisp in brand burgundy */
+/* Forces job dates directly below titles to look crisp in brand burgundy */
 .work-details h3 span {
   float: none !important;
   display: block !important;
@@ -161,21 +160,21 @@ main p {
   color: #555;
 }
 
-/* Education Displays */
+/* Education Layout Displays */
 .education-item h3 {
   margin: 0 0 5px 0;
   color: #800020 !important;
   font-weight: 700;
 }
 
-/* Targets certificate/degree lines in the education area */
+/* UPDATED: Forces degree and certificate text lines to stand out bold and black */
 .education-item p {
   margin: 0;
-  color: #800020 !important;
-  font-weight: 600;
+  color: #000000 !important;
+  font-weight: 800 !important;
 }
 
-/* UPDATED: Forces honors distinctions like Summa Cum Laude to stand out in bold black text */
+/* Forces honors distinctions (Summa Cum Laude) to follow same bold black style */
 .education-item p + p {
   font-weight: 800 !important;
   color: #000000 !important;
@@ -183,7 +182,7 @@ main p {
   margin-top: 2px;
 }
 
-/* Download Link Button Layout - Set to burgundy background with pure white text */
+/* Download Link Button Layout */
 .btn.download-link {
   display: inline-block;
   background-color: #800020 !important;
@@ -211,40 +210,68 @@ main p {
   100% { transform: scale(1); }
 }
 
-/* Global Link Settings on Home & Resume to deep burgundy */
-a {
+/* Global Link Settings for main page body links to remain brand burgundy */
+main a {
   color: #800020;
   text-decoration: none;
   font-weight: 600;
   transition: all 0.2s ease;
 }
 
-a:hover {
+main a:hover {
   color: #a31d3d;
   text-decoration: underline;
 }
 
-/* Shared Footer Styles */
+/* ==========================================================================
+   5. FIXED & UNIFIED FOOTER STYLES
+   ========================================================================== */
+/* UPDATED: Forces entire footer area to be a uniform, bold black look */
 footer {
   text-align: center;
   padding: 40px 20px;
-  font-size: 0.9rem;
-  color: #95a5a6;
+  font-size: 0.95rem;
+  font-weight: 700 !important;
+  color: #000000 !important;
 }
 
+/* Style for text links in the footer to stay bold black */
+footer p, footer a {
+  color: #000000 !important;
+  text-decoration: none;
+  font-weight: 700 !important;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* FIX: Centers and stabilizes the social media icons block */
 .socials {
-  list-style: none;
-  padding: 0;
-  margin: 15px 0 0 0;
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 15px auto 0 auto !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.socials li {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: inline-block !important;
 }
 
 .socials img {
-  width: 24px;
-  height: 24px;
+  width: 26px;
+  height: 26px;
+  display: block;
+  margin: 0 auto;
   transition: transform 0.2s ease;
 }
 
 .socials img:hover {
   transform: scale(1.15);
 }
+
 
