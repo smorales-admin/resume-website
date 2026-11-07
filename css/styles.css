@@ -275,14 +275,15 @@ main a:hover {
   width: 20px;
   height: 20px;
   display: block;
-  filter: grayscale(100%) brightness(30%); /* Blends blue icon into bold dark font color */
-  transition: transform 0.2s ease, filter 0.2s ease;
+  /* REMOVED THE DARK FILTER: This makes the blue logo highly pronounced and bright */
+  filter: none !important; 
+  transition: transform 0.2s ease;
 }
 
 .footer-linkedin-icon:hover {
-  transform: scale(1.1);
-  filter: none; /* Restores color theme dynamically on pointer hover */
+  transform: scale(1.2); /* Gives a clean pop animation when hovered */
 }
+
 
 
 
