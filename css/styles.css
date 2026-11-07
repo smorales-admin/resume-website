@@ -224,54 +224,65 @@ main a:hover {
 }
 
 /* ==========================================================================
-   5. FIXED & UNIFIED FOOTER STYLES
+   5. FIXED, HIGH-CONTRAST SINGLE LINE FOOTER BAR (Updated Overrides)
    ========================================================================== */
-/* UPDATED: Forces entire footer area to be a uniform, bold black look */
-footer {
-  text-align: center;
-  padding: 40px 20px;
-  font-size: 0.95rem;
-  font-weight: 700 !important;
-  color: #000000 !important;
+.site-footer {
+  width: 100%;
+  position: relative;
+  margin-top: 40px;
+  padding: 15px 0;
+  background: rgba(255, 255, 255, 0.85); /* Semi-transparent bar protects from floor shadows */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Style for text links in the footer to stay bold black */
-footer p, footer a {
-  color: #000000 !important;
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1a202c !important; /* Bold, high-contrast dark text */
+}
+
+.footer-container a {
+  color: #1a202c !important;
   text-decoration: none;
   font-weight: 700 !important;
+  transition: color 0.2s ease;
 }
 
-footer a:hover {
+.footer-container a:hover {
+  color: #800020 !important; /* Turns burgundy on hover */
   text-decoration: underline;
 }
 
-/* FIX: Centers and stabilizes the social media icons block */
-.socials {
-  list-style: none !important;
-  padding: 0 !important;
-  margin: 15px auto 0 auto !important;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
+.footer-divider {
+  color: #a0aec0;
+  user-select: none;
 }
 
-.socials li {
-  margin: 0 !important;
-  padding: 0 !important;
-  display: inline-block !important;
+.footer-linkedin-link {
+  display: inline-flex;
+  align-items: center;
 }
 
-.socials img {
-  width: 26px;
-  height: 26px;
+.footer-linkedin-icon {
+  width: 20px;
+  height: 20px;
   display: block;
-  margin: 0 auto;
-  transition: transform 0.2s ease;
+  filter: grayscale(100%) brightness(30%); /* Blends blue icon into bold dark font color */
+  transition: transform 0.2s ease, filter 0.2s ease;
 }
 
-.socials img:hover {
-  transform: scale(1.15);
+.footer-linkedin-icon:hover {
+  transform: scale(1.1);
+  filter: none; /* Restores color theme dynamically on pointer hover */
 }
+
 
 
