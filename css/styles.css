@@ -73,7 +73,7 @@ main p {
   margin-top: 0;
 }
 
-/* FIX: Targets subheadings like "Technical Tools" and "Professional Expertise" */
+/* Subheadings like "Technical Tools" and "Professional Expertise" */
 .resume-section h3, 
 .work-summary h3 {
   color: #800020 !important;
@@ -92,13 +92,13 @@ main p {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08) !important;
 }
 
-/* FIX: Job title and place of employment stay on one single burgundy line */
+/* Job title and place of employment stay on one single burgundy line */
 .work-details h3 {
   margin: 0;
   font-size: 1.25rem;
   color: #800020 !important;
   font-weight: 700;
-  display: block !important; /* Overrides flex-direction: column to keep on one line */
+  display: block !important;
   text-align: left !important;
 }
 
@@ -107,13 +107,13 @@ main p {
   color: #800020 !important;
 }
 
-/* FIX: Forces dates directly below the job line, aligned perfectly left */
+/* UPDATED: Forces job dates directly below titles to look crisp in brand burgundy */
 .work-details h3 span {
   float: none !important;
   display: block !important;
   margin-top: 5px;
   font-size: 1rem;
-  color: #555555 !important; /* Secondary dark gray color for easier scanning */
+  color: #800020 !important;
   font-weight: 600;
 }
 
@@ -164,21 +164,23 @@ main p {
 /* Education Displays */
 .education-item h3 {
   margin: 0 0 5px 0;
-  color: #800020 !important; /* Education institution names to burgundy */
+  color: #800020 !important;
   font-weight: 700;
 }
 
-/* FIX: Targets degree lines/subheadings in the education area */
+/* Targets certificate/degree lines in the education area */
 .education-item p {
   margin: 0;
   color: #800020 !important;
   font-weight: 600;
 }
 
-/* Keeps secondary text clean */
+/* UPDATED: Forces honors distinctions like Summa Cum Laude to stand out in bold black text */
 .education-item p + p {
-  font-weight: normal;
-  color: #2c3e50 !important;
+  font-weight: 800 !important;
+  color: #000000 !important;
+  font-style: normal;
+  margin-top: 2px;
 }
 
 /* Download Link Button Layout - Set to burgundy background with pure white text */
