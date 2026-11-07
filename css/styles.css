@@ -73,6 +73,15 @@ main p {
   margin-top: 0;
 }
 
+/* FIX: Targets subheadings like "Technical Tools" and "Professional Expertise" */
+.resume-section h3, 
+.work-summary h3 {
+  color: #800020 !important;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
 /* Work Experience Layouts & Smooth Moving Effect (Preserved) */
 .work-item {
   transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s ease;
@@ -83,23 +92,28 @@ main p {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08) !important;
 }
 
-/* FIXES THE RIGHT-SIDE AWKWARD DATES: Forces titles & dates to align perfectly to the left */
+/* FIX: Job title and place of employment stay on one single burgundy line */
 .work-details h3 {
   margin: 0;
   font-size: 1.25rem;
-  color: #2c3e50;
-  display: flex;
-  flex-direction: column;
+  color: #800020 !important;
+  font-weight: 700;
+  display: block !important; /* Overrides flex-direction: column to keep on one line */
   text-align: left !important;
 }
 
-/* Targets the date span text inside the header and forces left alignment */
+/* Ensures strong/bold headings inside job details stay burgundy */
+.work-details h3 strong {
+  color: #800020 !important;
+}
+
+/* FIX: Forces dates directly below the job line, aligned perfectly left */
 .work-details h3 span {
   float: none !important;
   display: block !important;
   margin-top: 5px;
   font-size: 1rem;
-  color: #800020 !important; /* Turns dates into burgundy */
+  color: #555555 !important; /* Secondary dark gray color for easier scanning */
   font-weight: 600;
 }
 
@@ -154,8 +168,17 @@ main p {
   font-weight: 700;
 }
 
+/* FIX: Targets degree lines/subheadings in the education area */
 .education-item p {
   margin: 0;
+  color: #800020 !important;
+  font-weight: 600;
+}
+
+/* Keeps secondary text clean */
+.education-item p + p {
+  font-weight: normal;
+  color: #2c3e50 !important;
 }
 
 /* Download Link Button Layout - Set to burgundy background with pure white text */
@@ -222,3 +245,4 @@ footer {
 .socials img:hover {
   transform: scale(1.15);
 }
+
