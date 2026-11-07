@@ -1,285 +1,248 @@
-/*
-COLOR PALETTE
 
-Primary Accent: Slate Burgundy     #7a2e3a
-Secondary Accent: Sandy beige       #bcaa96
-Dark gray                          #222222
-Light gray                         #d3d4d6
-Off-white                          #f6f6f6
-*/
 
-/* GLOBAL STYLES 
-----------------------------------*/
-/* https://paulirish.com
-*/
-html {
-    box-sizing: border-box;
-    font-size: 62.5%; /* set default to 10px */
-}
-*, *:before, *:after {
-    box-sizing: inherit;
-}
 
-html, body {
-    height: 100%;
-}
+
+
+
+/* ==========================================================================
+   1. GLOBAL RESETS & TYPOGRAPHY (Used by both Home and Resume)
+   ========================================================================== */
 body {
-    background: #f6f6f6;
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.5rem;
-    line-height: 1.4;
-}
-h1 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 800;
-    margin: 0;
-    font-size: 5.5rem;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
-    color: #7a2e3a;
-}
-h2 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    margin: 0;
-    font-size: 3.2rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: #7a2e3a;
-}
-h3 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    margin: 0;
-    font-size: 2.2rem;
-    color: #7a2e3a;
-}
-/* Aligns dates to the left, changes them to burgundy, and adds a breathing gap */
-h3 span {
-    display: block;
-    float: none !important;
-    color: #7a2e3a !important;
-    font-size: 1.6rem;
-    margin-top: 6px;
-    font-weight: normal;
-}
-/* links */
-a {
-    color: #7a2e3a;
-}
-a:hover {
-    color: #bcaa96;
-    text-decoration: none;
-}
-footer a {
-    color: #bcaa96;
-}
-footer a:hover {
-    color: #7a2e3a;
-}
-.btn {
-    background: #7a2e3a;
-    color: #f6f6f6;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    display: inline-block;
-    padding: 7px;
-    letter-spacing: 0.1em;
-    line-height: 1;
-    border-radius: 4px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f8f9fa;
+  color: #2c3e50;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
 .content-wrapper {
-    margin: 0 auto;
-    padding: 30px;
-    max-width: 900px;
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
 }
 
-/* HOME
-----------------------------------*/
-.home {
-    background: url(../images/bg-home-office-studio.jpg) no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-}
-.home .content-wrapper {
-    flex: 1 0 auto;
-}
+/* ==========================================================================
+   2. HOMEPAGE SPECIFIC STYLES
+   ========================================================================== */
 .content-bg {
-    background: rgb(255 255 255 / 0.9);
-    padding: 30px;
-}
-.home header h2 {
-    color: #7a2e3a;
-    font-size: 2.6rem;
-    letter-spacing: 0.02em;
-    margin-top: 5px;
-}
-@media screen and (max-width: 650px) {
-    .home .content-wrapper {
-        padding: 10px;
-    }
-    .content-bg {
-        padding: 20px;
-    }
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
 }
 
-/* RESUME
-----------------------------------*/
-.resume header::before {
-    background: url(../images/bg-home-office-studio.jpg) center;
-    background-size: cover;
-    content: "";
-    display: block;
-    height: 375px;
+header h1 {
+  font-family: 'Caveat', cursive;
+  font-size: 3.5rem;
+  color: #2c3e50;
+  margin: 10px 0 0 0;
 }
+
+header h2 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 30px;
+}
+
+main p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* ==========================================================================
+   3. RESUME PAGE SPECIFIC STYLES (Restored & Enhanced)
+   ========================================================================== */
 .resume-section {
-   margin-bottom: 50px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+  margin-bottom: 35px;
 }
+
 .resume-section h2 {
-    border-bottom: 2px dashed #d3d4d6;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-}
-.download-link {
-    position: fixed;
-    top: 5px;
-    left: 5px;
-    font-size: 1.5rem;
-}
-@media screen and (max-width: 1200px) {
-    .download-link {
-        position: absolute;
-    }
-}
-@media screen and (max-width: 500px) {
-    .resume header::before {
-        height: 200px;
-    }
-    h1 {
-        font-size: 4rem;
-    }
-    h2 {
-        font-size: 2.4rem;
-    }
-    h3 {
-        font-size: 1.8rem;
-    }
+  font-family: 'Open Sans', sans-serif;
+  color: #2c3e50;
+  border-bottom: 2px solid #dee2e6;
+  padding-bottom: 10px;
+  margin-top: 0;
 }
 
-/* Projects
-----------------------------------*/
-.project-item {
-    margin: 30px 0;
-}
-.project-item img {
-    width: 300px;
-}
-
-@media screen and (min-width: 860px) {
-    .project-item {
-        display: flow-root;
-    }
-    .project-item img {
-        float: left;
-        margin-right: 20px;
-    }
-}
-
-@media screen and (min-width: 650px) and (max-width: 859px) {
-    .project-wrapper {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 20px;
-    }
-    .project-item img {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .project-item img {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-}
-
-/* Work Experience
-----------------------------------*/
+/* Work Experience Layouts */
 .work-item {
-    margin: 30px 0;
-}
-.work-details p {
-    margin: 0;
-}
-.work-details {
-    margin-bottom: 15px !important;
-}
-@media screen and (min-width: 860px) {
-    .work-item {
-        display: block; 
-    }
-    .work-summary p:first-child {
-        margin-top: 0;
-    }
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s ease;
 }
 
-/* Education
-----------------------------------*/
-.education-item {
-    margin: 30px 0;
+.work-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08) !important;
 }
+
+.work-details h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+/* Organizational Projects Grid Layout */
+.project-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.project-item {
+  background: #f1f3f5;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  padding: 15px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+}
+
+.project-item img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.project-item h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.1rem;
+  color: #2c3e50;
+}
+
+.project-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Education Displays */
+.education-item h3 {
+  margin: 0 0 5px 0;
+  color: #2c3e50;
+}
+
 .education-item p {
-    margin: 0;
+  margin: 0;
 }
 
-/* FOOTER
-----------------------------------*/
+/* Download Link Button Layout */
+.btn.download-link {
+  display: inline-block;
+  background-color: #2c3e50;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  animation: subtlePulse 3s infinite;
+}
+
+.btn.download-link:hover {
+  background-color: #34495e;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   4. NEW ANIMATED PROFILE IMAGE BADGE & BLEND
+   ========================================================================== */
+.profile-pic-container {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 10px auto;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2c3e50, #bdc3c7); 
+  border: 4px solid #ffffff;
+  box-shadow: 0 8px 24px rgba(44, 62, 80, 0.15);
+  overflow: hidden; 
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; 
+  animation: gentleFloat 5s ease-in-out infinite;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  mix-blend-mode: multiply; 
+}
+
+/* ==========================================================================
+   5. KEYFRAMES & GLOBAL INTERACTIVE TRANSITIONS
+   ========================================================================== */
+@keyframes gentleFloat {
+  0% {
+    transform: translateY(0px);
+    box-shadow: 0 8px 24px rgba(44, 62, 80, 0.15);
+  }
+  50% {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 32px rgba(44, 62, 80, 0.25);
+  }
+  100% {
+    transform: translateY(0px);
+    box-shadow: 0 8px 24px rgba(44, 62, 80, 0.15);
+  }
+}
+
+@keyframes subtlePulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+
+/* Global Link Settings */
+a {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: #3498db;
+  text-decoration: underline;
+}
+
+/* Shared Footer Styles */
 footer {
-    background: #222;
-    color: #d3d4d6;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 0.9rem;
+  color: #95a5a6;
 }
+
 .socials {
-    list-style-type: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0 0;
 }
-.socials li {
-    display: inline-block;
-    margin-left: 10px;
-}
+
 .socials img {
-    width: 32px;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease;
 }
+
 .socials img:hover {
-    opacity: 0.5;
+  transform: scale(1.15);
 }
-
-@media screen and (min-width: 860px) {
-    footer {
-        display: flex;
-        justify-content: space-between;
-        padding: 0 20px;
-        align-items: center;
-    }
-}
-@media screen and (max-width: 859px) {
-    footer {
-        text-align: center;
-        padding: 10px;
-    }
-}
-/* Only adds breathing room on mobile - does NOT change fonts */
-@media (max-width: 600px) {
-    body {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-}
-
-
-
-
-
