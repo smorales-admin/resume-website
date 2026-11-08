@@ -148,11 +148,19 @@ main p {
 
 .project-item img {
   width: 100%;
-  height: 140px;
-  object-fit: cover;
+  height: 140px;             /* Sets a crisp, uniform window for all graphics */
+  object-fit: contain;       /* Fixes the cropped left image so the full logo displays */
+  background-color: #ffffff; /* Gives all images a uniform, clean white backdrop */
   border-radius: 4px;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
+  
+  /* NEW ALIGNMENT FIXES */
+  display: block;
+  mix-blend-mode: multiply;   /* Blends out any uneven white boxes into the card background */
+  padding: 5px;              /* Keeps the graphics cleanly separated from the edges */
+  box-sizing: border-box;
 }
+
 
 /* Project headers turned to deep burgundy */
 .project-item h3 {
