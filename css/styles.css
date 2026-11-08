@@ -17,10 +17,10 @@ body {
 }
 
 /* ==========================================================================
-   2. HOMEPAGE SPECIFIC STYLES (Updated with Premium Corporate Block Layout)
+   2. HOMEPAGE SPECIFIC STYLES (Clean Box-Free Corporate Layout)
    ========================================================================== */
 .content-bg {
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.85); /* Restored your original translucent white backdrop */
   padding: 40px;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
@@ -28,19 +28,16 @@ body {
 }
 
 header {
-  display: inline-block;
-  margin: 0 auto 40px auto;
-  border: 4px solid #800020; /* Solid burgundy perimeter frame */
-  padding: 25px 40px;
-  background-color: #ffffff;
+  margin: 0 auto 35px auto;
+  display: block;
 }
 
 header h1 {
   font-family: 'Playfair Display', serif;
   font-size: 3.5rem;
   font-weight: 900;
-  color: #800020;
-  margin: 0 0 10px 0;
+  color: #800020; /* Brand burgundy */
+  margin: 0 0 8px 0;
   line-height: 1.1;
   letter-spacing: -0.5px;
 }
@@ -50,12 +47,9 @@ header h2 {
   font-size: 1.1rem;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 5px; /* Pronounced tracking for an executive feel */
-  color: #2c3e50; /* Deep charcoal contrast against the name */
+  letter-spacing: 4px; /* Crisp tracking for executive aesthetic */
+  color: #2c3e50; /* Clean charcoal contrast */
   margin: 0;
-  padding-top: 10px;
-  border-top: 1px solid #dee2e6; /* Internal divider line */
-  display: block;
 }
 
 main p {
@@ -63,6 +57,7 @@ main p {
   margin-bottom: 20px;
   text-align: left;
 }
+
 
 
 /* ==========================================================================
