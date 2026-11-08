@@ -220,6 +220,15 @@ main p {
   color: #ffffff !important;
 }
 
+/* Custom override to keep the Back to Homepage button uniform but stationary */
+.btn.download-link.back-home-btn {
+  animation: none; /* Stops the pulsing so it feels solid */
+  margin-right: 15px; /* Adds clean spacing if it sits next to another element */
+  display: inline-block;
+}
+
+
+
 /* ==========================================================================
    4. KEYFRAMES & GLOBAL INTERACTIVE TRANSITIONS
    ========================================================================== */
